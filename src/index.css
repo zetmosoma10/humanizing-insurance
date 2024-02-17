@@ -109,7 +109,6 @@ a {
   font-size: 1.3rem;
   padding: 1.2rem 2.8rem;
   display: inline-block;
-  margin: 7rem;
   transition: all 0.2s;
 }
 
@@ -131,4 +130,35 @@ a {
 .link-hero:hover {
   color: var(--Very-Dark-Violet);
   background-color: #fff;
+}
+
+/* FEATURE */
+.callout {
+  background-color: var(--Dark-Violet);
+  text-align: center;
+  padding: 6rem 0;
+  background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  letter-spacing: -0.56px;
+}
+
+@media (min-width: 768px) {
+  .callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem;
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+  }
+
+  .callout__heading {
+    margin: 0;
+  }
 }
