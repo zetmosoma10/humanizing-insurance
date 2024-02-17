@@ -84,3 +84,19 @@ a {
     font-size: 1.9rem;
   }
 }
+
+/* Feature */
+.feature {
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+
+.feature__heading {
+  margin: 3.2rem 0 1.6rem;
+}
+
+@media (min-width: 1110px) {
+  .feature {
+    text-align: left;
+  }
+}

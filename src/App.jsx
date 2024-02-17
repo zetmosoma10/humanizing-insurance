@@ -1,5 +1,11 @@
+import Feature from "./components/Feature";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Feature />
+    </>
+  );
 }
 
 export default App;
