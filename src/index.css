@@ -24,10 +24,63 @@ html {
 body {
   font-family: var(--text-font);
   font-size: 1.6rem;
+  color: var(--Dark-Grayish-Violet);
+}
+
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--heading-font);
+  color: var(--Dark-Violet);
+}
+
+h1 {
+  color: #fff;
+  font-size: 4.8rem;
+  letter-spacing: -0.67px;
+}
+
+h2 {
+  font-size: 4.8rem;
+  letter-spacing: -0.67px;
+}
+
+h3 {
+  font-size: 2.8rem;
+  letter-spacing: -0.39px;
+}
+
+p {
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--text-font);
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 7.2rem;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 7.2rem;
+    letter-spacing: -1px;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.9rem;
+  }
 }
