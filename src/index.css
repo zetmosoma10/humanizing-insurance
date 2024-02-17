@@ -100,3 +100,35 @@ a {
     text-align: left;
   }
 }
+
+/* ButtonLink */
+.button-link {
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1.2rem 2.8rem;
+  display: inline-block;
+  margin: 7rem;
+  transition: all 0.2s;
+}
+
+.link-nav {
+  border: 1px solid var(--Very-Dark-Violet);
+  color: var(--Very-Dark-Violet);
+}
+
+.link-nav:hover {
+  background: var(--Very-Dark-Violet);
+  color: #fff;
+}
+
+.link-hero {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.link-hero:hover {
+  color: var(--Very-Dark-Violet);
+  background-color: #fff;
+}
