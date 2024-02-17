@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --heading-font: "DM Serif Display", serif;
+  --text-font: "Karla", sans-serif;
+
+  /* COLORS */
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--text-font);
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
