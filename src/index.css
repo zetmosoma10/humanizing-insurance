@@ -88,16 +88,32 @@ a {
 /* Feature */
 .feature {
   text-align: center;
-  margin-bottom: 5.6rem;
+}
+
+.feature-container h2 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 7.5rem;
 }
 
 .feature__heading {
   margin: 3.2rem 0 1.6rem;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 768px) {
   .feature {
     text-align: left;
+  }
+
+  .grid-1x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+  .feature-container h2 {
+    text-align: left;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
   }
 }
 
