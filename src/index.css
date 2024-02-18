@@ -110,6 +110,7 @@ a {
   padding: 1.2rem 2.8rem;
   display: inline-block;
   transition: all 0.2s;
+  white-space: unset;
 }
 
 .link-nav {
@@ -136,7 +137,7 @@ a {
 .callout {
   background-color: var(--Dark-Violet);
   text-align: center;
-  padding: 6rem 0;
+  padding: 6rem 2rem;
   background-image: url("images/bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -147,6 +148,7 @@ a {
   margin-bottom: 4rem;
   font-size: 4rem;
   letter-spacing: -0.56px;
+  line-height: 56px;
 }
 
 @media (min-width: 768px) {
@@ -154,11 +156,110 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: left;
     padding: 7rem;
+    gap: 7rem;
     background-image: url("images/bg-pattern-how-we-work-desktop.svg");
   }
 
   .callout__heading {
     margin: 0;
+    max-width: 400px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--Very-Light-Gray);
+}
+
+.footer__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 5rem;
+}
+
+.media-icons {
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__media {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* GRIDS*/
+
+.grid {
+  display: grid;
+}
+/* FOOTER*/
+
+footer {
+  padding: 8rem 0;
+  background-image: url("images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.footer__links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links li {
+  list-style: none;
+  margin-bottom: 1.4rem;
+}
+
+.footer__links a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  color: var(--Dark-Violet);
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.footer__links h4 {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .footer__links {
+    text-align: center;
+  }
+  .grid {
+    justify-items: center;
+    row-gap: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-4x1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer {
+    padding: 6rem 0;
+    background-image: url("images/bg-pattern-footer-desktop.svg");
+    background-position-y: top;
+    background-position-x: left;
+    background-size: auto;
+  }
+  .footer__links h4 {
+    margin-bottom: 3.4rem;
   }
 }

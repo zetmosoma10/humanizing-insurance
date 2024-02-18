@@ -2,7 +2,7 @@ import ButtonLink from "./ButtonLink";
 
 function CallOutAction() {
   return (
-    <div className="callout">
+    <div className="callout container">
       <h2 className="callout__heading">Find out more about how we work</h2>
       <ButtonLink type="hero">How we work</ButtonLink>
     </div>
