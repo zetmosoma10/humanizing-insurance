@@ -2,11 +2,9 @@ import { useState } from "react";
 import ButtonLink from "./ButtonLink";
 
 function Navbar() {
-  const [toggle, setToggle] = useState(false);
-  console.log(toggle);
+  const [toggle, setToggle] = useState(true);
   let toggleClass;
   const handleToggle = () => {
-    console.log("Clicked!");
     setToggle((prevToggle) => !prevToggle);
   };
 
