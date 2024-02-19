@@ -229,17 +229,17 @@ footer {
   background-position-y: top;
 }
 
-.footer__links ul {
+ul {
   margin: 0;
   padding: 0;
 }
 
-.footer__links li {
+li {
   list-style: none;
   margin-bottom: 1.4rem;
 }
 
-.footer__links a {
+a {
   font-weight: bold;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
@@ -352,5 +352,114 @@ footer {
 
   .hero .grid {
     padding-bottom: 0;
+  }
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.8rem 0;
+}
+
+.nav__links {
+  width: 100%;
+  text-align: center;
+  background-color: var(--Very-Dark-Violet);
+  padding-top: 3.8rem;
+  background-image: url("images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: 100%;
+  height: 100vh;
+  transition: all 0.28s;
+}
+
+.nav__links a {
+  color: #fff;
+  width: 90%;
+}
+
+.nav__links a:hover {
+  color: var(--Dark-Grayish-Violet);
+}
+
+.nav__links .link-nav {
+  border-color: #fff;
+}
+
+.nav__links .link-nav:hover {
+  background-color: #fff;
+  color: var(--Very-Dark-Violet);
+  text-decoration: none;
+}
+
+.nav__logo {
+  margin-left: 5%;
+}
+
+.toggle-container {
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapsable-nav {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  .toggle-container {
+    display: none;
+  }
+
+  .collapsable-nav {
+    transform: translateX(0);
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    padding-top: 0;
+    background-color: transparent;
+    margin-right: 5%;
+    background-image: none;
+  }
+
+  .nav__links a {
+    color: var(--Dark-Grayish-Violet);
+  }
+
+  .nav__links a:hover {
+    color: var(--Very-Dark-Violet);
+  }
+
+  .nav__links li {
+    margin: 0 2rem 0 0;
+  }
+
+  .nav__links li:last-child {
+    margin: 0;
+  }
+
+  .nav__links .link-nav {
+    white-space: nowrap;
+    border-color: var(--Very-Dark-Violet);
+    color: var(--Very-Dark-Violet);
+  }
+
+  .nav__links .link-nav:hover {
+    color: #fff;
+    background-color: var(--Very-Dark-Violet);
   }
 }
