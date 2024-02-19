@@ -26,7 +26,7 @@ function Feature() {
   ));
 
   return (
-    <section className="feature-container container">
+    <section className=" container feature-container">
       <h2>We’re different</h2>
       <div className="grid grid-1x3">{renderFeatures}</div>
     </section>
