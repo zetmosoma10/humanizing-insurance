@@ -403,10 +403,11 @@ nav {
 
 @media (max-width: 767px) {
   .nav__links {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 68px;
   }
+
   .collapsable-nav {
     transform: translateX(-100%);
   }
